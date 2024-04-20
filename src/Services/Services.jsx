@@ -10,7 +10,7 @@ const Services = () => {
      <div className='grid lg:grid-cols-3 md:grid-cols-2 md:pl-[100px] justify-items-center gap-10 max-sm:px-5' >
        
        {ServiceData.map((item,index)=>(
-        <ServiceCard title={item.title} description={item.description} icon={item.icon}  />
+        <ServiceCard key={index} title={item.title} description={item.description} icon={item.icon}  />
        ))}
     </div>
    </div>
