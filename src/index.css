@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: Lemands;
+  src: url('./assets/Font/Lemands.ttf');
+}
+@font-face {
+  font-family:babs ;
+  src: url('./assets/Font/BebasNeue-Regular.ttf');
+}
+@font-face {
+  font-family:keepcalm ;
+  src: url('./assets/Font/KeepCalm-Medium.ttf');
+}
+@font-face {
+  font-family:libery ;
+  src: url('./assets/Font/LiberationSans-Regular.ttf');
+}
+@font-face {
+  font-family:vamapre ;
+  src: url('./assets/Font/Vampire\ Wars.ttf');
+}
+body{
+  font-family: libery;
+  background-color:#1e293b;
+}
+
+.container{
+  @apply lg:px-10 lg:ml-[70px]
+}
+.bg-primary-color{
+  background-image: linear-gradient(to right,white,#facc15);
+}
+span,
+.primary-color{
+  background-image: linear-gradient(to right,#facc15 ,white);
+  -webkit-background-clip: text;
+  color: transparent;
+}
